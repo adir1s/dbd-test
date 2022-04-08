@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base target="_top">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="app-css.css">
+
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="input-field col s6">
+        <h4> DBD Build Calculator</h4>
+        <h6> PTB 5.7.0 </h6>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s6">
+        <select id="killer" class="blue darken-2">
+          <option disabled selected>Select Killer</option>
+
+          <!-- Add other options dynamically from server-side -->
+
+        </select>
+        <label for="killer">Killer</label>
+      </div>
+    </div> <!-- Close Row Div -->
+
+    <div class="row">
+      <div class="input-field col s6">
+        <select id="addon1">
+          <option disabled selected value="">Select Addon 1</option>
+
+          <!-- Add other options dynamically from server-side -->
+
+        </select>
+        <label for="addon1">Addon 1</label>
+      </div>
+
+      <div class="input-field col s6">
+        <select id="addon2">
+          <option disabled selected value="">Select Addon 2</option>
+
+          <!-- Add other options dynamically from server-side -->
+
+        </select>
+        <label for="addon2">Addon 2</label>
+      </div>
+    </div> <!-- Close Row Div -->
+
+    <div class="row">
+      <button id="btn01" class="waves-effect waves-light orange darken-3 btn"><i
+          class="material-icons right">clear_all</i>Clear Addons</a>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s6">
+        <input disabled value="" id="basemovespeed" class="grey-text text-darken-4" type="text" class="validate">
+        <label for="basemovespeed" id="lblbasemovespeed" class="teal-text text-darken-4">Base Move Speed</label>
+      </div>
+
+      <div class="input-field col s6">
+        <input disabled value="" id="powermod1" class="grey-text text-darken-4" type="text" class="validate">
+        <label for="powermod1" id="lblpowermod1" class="teal-text text-darken-4">Power Modifier 1</label>
+      </div>
+    </div> <!-- Close Row Div -->
+
+    <div class="row">
+      <div class="input-field col s6">
+        <input disabled value="" id="powermod2" class="grey-text text-darken-4" type="text" class="validate">
+        <label for="powermod2" id="lblpowermod2" class="teal-text text-darken-4">Power Modifier 2</label>
+      </div>
+
+      <div class="input-field col s6">
+        <input disabled value="" id="powermod3" class="grey-text text-darken-4" type="text" class="validate">
+        <label for="powermod3" id="lblpowermod3" class="teal-text text-darken-4">Power Modifier 3</label>
+      </div>
+    </div> <!-- Close Row Div -->
+
+    <div class="row">
+      <div class="input-field col s6">
+        <input disabled value="" id="powermod4" class="grey-text text-darken-4" type="text" class="validate">
+        <label for="powermod4" id="lblpowermod4" class="teal-text text-darken-4">Power Modifier 4</label>
+      </div>
+
+      <div class="input-field col s6">
+        <input disabled value="" id="powermod5" class="grey-text text-darken-4" type="text" class="validate">
+        <label for="powermod5" id="lblpowermod5" class="teal-text text-darken-4">Power Modifier 5</label>
+      </div>
+    </div> <!-- Close Row Div -->
+
+    <div class="row">
+      <div class="input-field col s6">
+        <input disabled value="" id="powermod6" class="grey-text text-darken-4" type="text" class="validate">
+        <label for="powermod6" id="lblpowermod6" class="teal-text text-darken-4">Power Modifier 6</label>
+      </div>
+
+      <div class="input-field col s6">
+        <input disabled value="" id="powermod7" class="grey-text text-darken-4" type="text" class="validate">
+        <label for="powermod7" id="lblpowermod7" class="teal-text text-darken-4">Power Modifier 7</label>
+      </div>
+    </div> <!-- Close Row Div -->
+
+    <div class="row">
+      <div class="input-field col s6">
+        <input disabled value="" id="powermod8" class="grey-text text-darken-4" type="text" class="validate">
+        <label for="powermod8" id="lblpowermod8" class="teal-text text-darken-4">Power Modifier 8</label>
+      </div>
+
+      <div class="input-field col s6">
+        <input disabled value="" id="powermod9" class="grey-text text-darken-4" type="text" class="validate">
+        <label for="powermod9" id="lblpowermod9" class="teal-text text-darken-4">Power Modifier 9</label>
+      </div>
+    </div> <!-- Close Row Div -->
+
+    <div class="row">
+      <div class="input-field col s6">
+        <input disabled value="" id="powermod10" class="grey-text text-darken-4" type="text" class="validate">
+        <label for="powermod10" id="lblpowermod10" class="teal-text text-darken-4">Power Modifier 10</label>
+      </div>
+
+      <div class="input-field col s6">
+        <input disabled value="" id="powermod11" class="grey-text text-darken-4" type="text" class="validate">
+        <label for="powermod11" id="lblpowermod11" class="teal-text text-darken-4">Power Modifier 11</label>
+      </div>
+    </div> <!-- Close Row Div -->
+
+  </div> <!-- Close Row Div -->
+
+  <div class="row">
+    <p>All calculations were done by the developer by taking data from
+      various sources. Please e-mail <a href="mailto:Helix.D2@outlook.com">me
+        here</a> to report any inaccuracies or calculation errors, preferably
+      with a video showing the correct measure in-game. </p>
+  </div>
+
+  </div> <!-- Close Container Div -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./app-js.js"></script>
+</body>
+
+</html>
