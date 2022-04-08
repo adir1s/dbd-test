@@ -1126,7 +1126,7 @@ function calcAndShowAddonData() {
         var totalBlinkRechargeTime = baseBlinkRechargeTime + totalArr[4]
         var totalFatigue = baseFatigue + totalArr[5]
         var totalChainBlinkFatigue = baseChainBlinkFatigue + totalArr[6]
-        var totalChainBlinkWindow = baseChainBlinkWindow + totalArr[7]
+        var totalChainBlinkWindow = (baseChainBlinkWindow / (1 - totalArr[7])).toFixed(2)
       }
       else if(addon1 === addon2 || addon2 === "") {
         var totalMoveSpeed = baseMoveSpeed + addon1Arr[0]
@@ -1136,7 +1136,7 @@ function calcAndShowAddonData() {
         var totalBlinkRechargeTime = baseBlinkRechargeTime + addon1Arr[4]
         var totalFatigue = baseFatigue + addon1Arr[5]
         var totalChainBlinkFatigue = baseChainBlinkFatigue + addon1Arr[6]
-        var totalChainBlinkWindow = baseChainBlinkWindow / (1 - addon1Arr[7])
+        var totalChainBlinkWindow = (baseChainBlinkWindow / (1 - addon1Arr[7])).toFixed(2)
       }
       else if(addon1 === "") {
         var totalMoveSpeed = baseMoveSpeed + addon2Arr[0]
@@ -1146,7 +1146,7 @@ function calcAndShowAddonData() {
         var totalBlinkRechargeTime = baseBlinkRechargeTime + addon2Arr[4]
         var totalFatigue = baseFatigue + addon2Arr[5]
         var totalChainBlinkFatigue = baseChainBlinkFatigue + addon2Arr[6]
-        var totalChainBlinkWindow = baseChainBlinkWindow / (1 - addon2Arr[7])
+        var totalChainBlinkWindow = (baseChainBlinkWindow / (1 - addon2Arr[7])).toFixed(2)
       }
       document.getElementById("basemovespeed").value = totalMoveSpeed
       document.getElementById("powermod1").value = totalPowerMoveSpeed
