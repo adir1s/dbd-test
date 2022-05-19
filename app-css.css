@@ -8,6 +8,10 @@ p {
   font-size: 12px;
 }
 
+.chip {
+  visibility: hidden;
+}
+
 h4 {
   margin-left: 40px;
 }
